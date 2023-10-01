@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.div{
+    height: 90vh;
+    margin: auto;
+    position: relative;
+}
+
+.div .image{
+    display: none;
+}
+
+.div .image img{
+    width: 100%;
+    height: 92vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.div .button{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.div .button a{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    font-size: 40px;
+    user-select: none;
+}
+
+.dots{
+    text-align: center;
+    position: absolute;
+    bottom: 12px;
+    left: 45%;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 15px;
+
+}
+
+.dot{
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.195);
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.active, .dot:hover{
+    background: black;
+}
+.mob{
+    height: 90vh;
+    margin: auto;
+    position: relative;
+}
+
+.mob .imagemob{
+    display: none;
+}
+
+.mob .imagemob img{
+    width: 100%;
+    height: 92vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.mob .buttonmob{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.mob .buttonmob a{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    align-items: center;
+    cursor: pointer;
+    color: gray;
+    font-size: 40px;
+    user-select: none;
+}
+
+.dotsmob{
+    text-align: center;
+    position: absolute;
+    bottom: 8px;
+    left: 40%;
+    padding: 5px 10px;
+    height: 30px;
+    border-radius: 15px;
+
+}
