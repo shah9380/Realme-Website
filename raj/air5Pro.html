@@ -98,8 +98,49 @@
 
             </div>
         </nav>
+        <div class="w-4/5 my-0 mx-auto pb-5 md:hidden ">
+            <ul class="flex items-center justify-center ">
+                <li class="mx-3 text-xl text-gray-400 hover:text-black 
+                                                    relative
+                                                    before:content-['']
+                                                    before:absolute
+                                                    before:-bottom-2
+                                                    before:left-6
+                                                    before:w-0
+                                                    before:h-1
+                                                    before:rounded-full
+                                                    before:opacity-0
+                                                    before:bg-gray-600
+                                                    hover:before:w-2/5
+                                                    hover:before:opacity-100"><a href="#purchase">Purchase</a></li>
+                <li class="mx-3 text-xl text-gray-400 hover:text-black relative
+                before:content-['']
+                before:absolute
+                before:-bottom-2
+                before:left-4
+                before:w-0
+                before:h-1
+                before:rounded-full
+                before:opacity-0
+                before:bg-gray-600
+                hover:before:w-2/5
+                hover:before:opacity-100"><a href="#diva">Review</a></li>
+                <li class="mx-3 text-xl text-gray-400 hover:text-black relative
+                before:content-['']
+                before:absolute
+                before:-bottom-2
+                before:left-6
+                before:w-0
+                before:h-1
+                before:rounded-full
+                before:opacity-0
+                before:bg-gray-600
+                hover:before:w-2/5
+                hover:before:opacity-100"><a href="#diva">Overview</a></li>
+            </ul>
+        </div>
     </header>
-    <div class="dark:bg-white w-full">
+    <div class="dark:bg-white w-full" id="purchase">
     <div class="flex flex-row justify-between items-center w-4/5 my-0 mx-auto sm:invisible md:visible ">
         <div>
             <span class="font-bold">realme Buds Air 5 Pro</span>
@@ -113,47 +154,6 @@
         </div>
     </div>
     <hr class="my-5 ">
-    <div class="w-4/5 my-0 mx-auto md:hidden">
-        <ul class="flex items-center justify-center ">
-            <li class="mx-3 text-xl text-gray-400 hover:text-black 
-                                                relative
-                                                before:content-['']
-                                                before:absolute
-                                                before:-bottom-2
-                                                before:left-6
-                                                before:w-0
-                                                before:h-1
-                                                before:rounded-full
-                                                before:opacity-0
-                                                before:bg-gray-600
-                                                hover:before:w-2/5
-                                                hover:before:opacity-100"><a href="#">Purchase</a></li>
-            <li class="mx-3 text-xl text-gray-400 hover:text-black relative
-            before:content-['']
-            before:absolute
-            before:-bottom-2
-            before:left-4
-            before:w-0
-            before:h-1
-            before:rounded-full
-            before:opacity-0
-            before:bg-gray-600
-            hover:before:w-2/5
-            hover:before:opacity-100"><a href="#">Review</a></li>
-            <li class="mx-3 text-xl text-gray-400 hover:text-black relative
-            before:content-['']
-            before:absolute
-            before:-bottom-2
-            before:left-6
-            before:w-0
-            before:h-1
-            before:rounded-full
-            before:opacity-0
-            before:bg-gray-600
-            hover:before:w-2/5
-            hover:before:opacity-100"><a href="#">Overview</a></li>
-        </ul>
-    </div>
     </div>
     <section class="w-full h-screen dark:bg-white  -mt-10 p-6">
     <div class="w-4/5 my-0 mx-auto h-screen flex justify-between flex-wrap">
@@ -420,16 +420,16 @@
 
     </section>
     <section class="w-full mt-10 " id="divb" style="display: none;">
-        <div class="w-4/5 my-0 mx-auto flex justify-around items-center dark:bg-white ">
-            <div class="flex flex-wrap justify-evenly items-center w-2/5">
+        <div class="w-4/5 my-0 mx-auto flex justify-around items-center dark:bg-white sm:flex-col sm:h-44 md:flex-row md:h-80">
+            <div class="flex flex-wrap justify-evenly items-center w-2/5 sm:w-4/5 md:w-2/5">
                 <div><p class="text-5xl font-bold">5.0</p></div>
                 <div><i class="fa-solid fa-star" style="color: #e8d502;"></i><i class="fa-solid fa-star" style="color: #e8d502;"></i>
                     <i class="fa-solid fa-star" style="color: #e8d502;"></i><i class="fa-solid fa-star" style="color: #e8d502;"></i>
                     <i class="fa-solid fa-star" style="color: #e8d502;"></i>
                  <p>Average Rating based on 13 Reviews</p></div>
-                 <span class="rotate-90">_____</span>
+                 <span class="rotate-90 sm:hidden md:block">_____</span>
             </div>
-            <div class="flex flex-wrap w-1/2 ">
+            <div class="flex flex-wrap w-1/2 sm:w-4/5 sm:flex-row md:w-1/2 md:flex-col  ">
                 <ul class="flex flex-wrap ">
                     <li class="border-2 bg-gray-100 p-1 mx-3 my-1.5">Great Sound Quality 7</li>
                     <li class="border-2 bg-gray-100 p-1 mx-3 my-1.5">Comfortable Fit 5</li>
@@ -444,7 +444,7 @@
 
         <div class="w-4/5 mt-5 mb-0 mx-auto dark:bg-white">
 
-            <div class="flex justify-around items-center h-20">
+            <div class="flex justify-around items-center h-20 sm:invisible md:visible">
                 <div class="w-2/5 flex justify-evenly items-center">
                     <a href="#">All</a>
                     <a href="#">Photos&nbsp;3</a>
@@ -863,17 +863,21 @@
 
     <div class="w-full bg-white  h-20 fixed bottom-0">
         <div class="w-4/5 h-full  my-0 mx-auto flex justify-between items-center  ">
-            <div>
-            <span class="font-bold text-black">realme Buds Air 5 Pro</span>
+            <div class="-order-1">
+            <span class="font-bold text-black  sm:hidden md:block">realme Buds Air 5 Pro</span>
+            <img src="images/cart.svg" class="w-16 md:hidden sm:block" alt="cart" >
             </div>
-            <div class="w-4/12 flex justify-between items-center ">
-            <span class="price font-extrabold text-2xl ">₹4,199
+            
+            
+                        
+            <div class="w-4/12 flex justify-between items-center sm:w-9/12  md:w-7/12 lg:w-4/12">
+            <span class="price font-extrabold text-2xl sm:invisible md:visible ">₹4,999
                 <!-- <div class="absolute left-1a /3 bottom-16 w-2/5 bg-gray-300/50 h-16 rounded-lg  invisible hover:visible ">
                     
                 </div> -->
             </span>
-            <button type="submit" class="text-md w-36 border-2 border-black rounded-full  font-bold p-2 hover:bg-black hover:text-white"><a href="#">Add To Cart</a></button>
-            <button type="submit" class="text-md w-40 border-2 rounded-full bg-black text-white font-bold p-2"><a href="#">Buy Now</a></button>
+            <button type="submit" class="md:w-36 md:border-2 md:border-black md:rounded-full  md:font-bold md:p-2 md:bg-white md:text-black md:hover:bg-black md:hover:text-white sm:bg-black sm:text-white sm:text-xl sm:w-44 sm:p-3 sm:rounded-full lg:text-lg lg:p-0.5"><a href="#">Add To Cart</a></button>
+            <button type="submit" class="md:text-md md:w-40 md:border-2 md:rounded-full md:bg-black md:text-white md:font-bold md:p-2 sm:text-black sm:bg-yellow-400 sm:text-xl sm:w-44 sm:p-3 sm:rounded-full lg:text-lg lg:p-1"><a href="#">Buy Now</a></button>
           </div>
         </div>
     </div>
