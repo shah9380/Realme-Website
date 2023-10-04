@@ -31,7 +31,7 @@ header a:hover{
 .header-div img{
     vertical-align: middle;
 }
-.hide {
+/* .hide {
     margin:20px 32px;
     visibility: hidden;
 }
@@ -42,7 +42,7 @@ li{
 }
 .eng:hover ~ .hide{
     visibility: visible;
-}
+} */
 
 .input-box img{
     vertical-align: middle;
@@ -66,12 +66,12 @@ main{
 .pass{
     width: 95%;
 }
-@media (min-width:350px) and (max-width:522px) {
+@media (min-width:350px) and (max-width:522px){
     .pass{
-        width: 92%;
+        width: 90%;
     }
     .in-phone{
-        width: 80%;
+        width: 70%;
     }
 }
 @media (min-width:541px) {
@@ -80,9 +80,8 @@ main{
         margin: 0 auto;
         padding-top: 50px;
     }
-    
     .pass{
-        width: 90%;
+        width: 89%;
     }
     .in-phone{
         width: 80%;
@@ -92,11 +91,7 @@ main{
     }
   
 }
-/* @media (min-width:6px){
-    input{
-        width: 70%;
-    }
-} */
+
 .phone{
     background-color:white;
     margin: 95%;
@@ -188,6 +183,9 @@ footer a{
         width: 97%;
         padding-top: 30px;
        
+    }
+    .in-phone{
+        width: 70%;
     }
     .stable{
         margin-left: unset;
