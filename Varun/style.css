@@ -330,6 +330,191 @@ font-weight:bold;
     height:18520px;
      margin-top:40px;
 }
+
+.footer-section{
+    display:flex;
+    justify-content: space-around;
+    margin-top:45px;
+    margin-left:210px;
+    margin-right:80px;
+}
+.menu-list li:hover{
+    color:#FFC915;
+}
+.menu-list li{
+font-size:12px;
+font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+line-height:2.3;
+}
+.title-menu h3{
+    font-size:14px;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    color:black;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+.button-support{
+    width:182px;
+    height:42px;
+    color:black;
+    background:white;
+    font-size:14px;
+    border:1px solid black;
+    border-radius:25px;
+}
+.button-support img{
+    width:30px;
+    height:27px;
+    margin-top:10px;
+    margin-left:10px;
+}
+.chat-text{
+    margin-right:7px;
+    margin-top:10px;
+    margin-left:5px;
+    font-weight:bold;
+
+}
+.button-support{
+    display:flex;
+    margin-bottom:8px;
+    
+}
+.button-support:hover{
+    background:black;
+    color:white;
+}
+.button-support img{
+background:black;
+background-color: transaparent;
+
+}
+.text-support p{
+font-size:12px;
+color:#6A6A6A;
+margin-left:28px;
+}
+.text-support h3{
+    margin-left:28px;
+    margin-top:4px;
+    font-size:18px;
+    color:black;
+    font-weight:bold;
+}
+.support-section{
+    margin-right:195px;
+}
+.social-icons{
+    display:flex;
+    justify-content: space-around;
+    margin-top:30px;
+}
+.icon-flex{
+    background-image:url(https://cdn-icons-png.flaticon.com/512/0/14.png);
+    background-size:cover;
+    width:30px;
+    height:30px;
+    background-repeat: no-repeat;
+    color:white;
+}
+.social-icons i{
+    margin-top:6px;
+    margin-left:7px;
+}
+.bottom-address{
+    font-size:12px;
+    margin-left:270px;
+    margin-top:15px;
+    margin-bottom:15px;
+
+}
+.bottom-line{
+    margin-bottom:20px;
+    width:1200px;
+    margin-left:270px;
+    height:2px;
+}
+.footer-text h3{
+    font-size:16px;
+    font-weight:bold;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    margin-left:300px;
+    margin-top:40px;
+}
+.footer-right-flex h3{
+    font-size:24px;
+    font-weight:bold;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    color:#FF0000;
+    margin-right:20px;
+    margin-top:-20px;
+
+}
+.footer-button-1{
+    width:140px;
+    height:40px;
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    background:white;
+    border :1px solid black;
+    border-radius:25px;
+    margin-right:10px;
+    margin-top:-20px;
+
+}
+.footer-button-1:hover{
+background:black;
+color:white;
+margin-right:10px;
+margin-top:-20px;
+}
+.footer-button-2{
+    width:140px;
+    height:40px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    font-family:"OpenSans-Regular","PingFang SC","Microsoft YaHei",sans-serif;
+    background:black;
+    border-radius:25px;
+    margin-right:10px;
+    margin-top:-20px;
+
+}
+.footer-right-flex{
+    display:flex;
+  margin-top: 60px;
+   margin-left: 20px;
+}
+.footer-text{
+    display:flex;
+    justify-content: left;
+}
+.footer{
+    width:100%;
+    height:100px;
+    background:white;
+    position:fixed;
+    bottom:0px;
+}
+.fixed-header{
+    margin-top:10px;
+    margin-bottom:30px;
+    width:100%;
+    height:50px;
+    background:white;
+    position:sticky;
+    overflow:hide;
+    top:0;
+    bottom:0;
+    z-index:1;
+}
+.Header-plus{
+    position: relative;
+    z-index:1000;
+}
 @media(300px<=width<=600px)
 {
     .nav-title
@@ -378,5 +563,9 @@ font-weight:bold;
     {
         width: fit-content;
         margin-left: 10px ;
+    }
+    .footer-right-flex
+    {
+        justify-content: right;
     }
 }
