@@ -238,6 +238,7 @@ border-top-right-radius: 8px;
 .Protection {
     color: rgb(98, 94, 94);
     font-size: 14px;
+    margin-left: 5px;
    
 }
 .Protection i{
@@ -304,6 +305,7 @@ input:hover{
 /*  recommended section start from here */
 .recommended{
     display: flex;
+    width: 100%;
     margin-top: 80px;
     justify-content: center;
     flex-direction: column;

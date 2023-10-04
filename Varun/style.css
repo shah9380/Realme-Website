@@ -1,9 +1,12 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
+    overflow: none;
 }
 .goods {
     position: relative;
+    
     font-family: PingFang SC,Microsoft YaHei,sans-serif,Arial;
     background: #fff;
 }
@@ -15,14 +18,14 @@
 .nav-items{
     display:flex;
     justify-content:space-around;
-    margin-right:480px;
+    margin-right:124px;
     font-family: "PingFang SC","Microsoft YaHei",sans-serif,Arial;
-    font-size:14px;
+    font-size:12px;
     color:#9B9B9B;
 
 }
 .nav-title{
-    margin-left:280px;
+    margin-left:40px;
     font-size:14px;
     color:#000000;
     font-family: "PingFang SC","Microsoft YaHei",sans-serif,Arial;
@@ -74,22 +77,24 @@ border-radius: 4px;
 margin-left:10px;
 }
 .ullist-1{
-    list-style-type: disc;
+    list-style-type: circle;
     line-height:2;
     margin-top:10px;
+    font-size: 14px;
 }
 .fa-solid{
-    color:linear-gradient(328deg, rgb(127, 192, 191) 0px, rgb(124, 203, 198) 100%);
+    color:gray;
 }
 .icon-1{
     width:255px;
     height:52px;
     border:1px solid black;
     color:black;
-    margin-top:10px;
-    border-radius:3px;
+   padding: 12px;
+   text-align: center;
+    border-radius:10px;
     font-size:14px;
-    margin-right:25px;
+    
     
 }
 
@@ -98,14 +103,18 @@ margin-left:10px;
     height:52px;
     background:#F9F9F9;
     color:black;
-    margin-top:10px;
-    border-radius:3px;
+   margin-left: 12px;
+   padding: 12px;
+   text-align: center;
+    border-radius:10px;
     font-size:14px;
+    border: none;
     
 }
 .color-box-flex{
 display:flex;
-margin-right:15px;
+margin-right:10px;
+justify-content: space-between;
 }
 .color-box h3{
 font-size:16px;
@@ -121,14 +130,41 @@ font-weight: bold;
 margin-top:15px;
 border-radius:8px;
 }
+.storage_button
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15px;
+}
 .button-3{
     width:255px;
     height:52px;
     color:black;
     margin-top:10px;
-    border-radius:3px;
+    border-radius:10px;
     font-size:14px;
     border:1px solid black;
+    padding: 12px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+}
+.button-4
+{
+    width:255px;
+    height:52px;
+    color:black;
+    margin-top:10px;
+    margin-left: 12px;
+    border-radius:10px;
+    font-size:14px;
+    background-color: rgb(102, 102, 102,0.1);
+    text-align: center;
+    padding: 12px;
+    border:none ;
+    
+    
+    
 }
 .Quantity h3{
     font-size:16px;
@@ -137,29 +173,74 @@ border-radius:8px;
     margin-top:15px;
     border-radius:9px;
 }
-.button-4{
+.button-5{
     width:148px;
     height:48px;
     color:black;
     margin-top:10px;
-    border-radius:0.24rem;
+    border-radius:12px;
     font-size:14px;
     background:#F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 12px;
 }
-.realme-card{
-width:520px;
-height:270px;
-background:#f9f9f9;
-padding-bottom:0.16rem;
-border-radius:0.08rem;
-margin-top:20px;
+form{
+    display:flex;
+    margin-top:15px;
+    overflow: auto;
+   position: absolute;
 }
-.header-card{
-    background:black;
-    height:48px;
-    background-image: url(https://r2.realme.net/img/ic_realme_care.d81b8f81.svg);
-    background-repeat: no-repeat;
+.pincode h3{
+    font-size:16px;
+    font-weight:bold;
+    color:black;
+    margin-top:20px;
+   }
+   .pincode input{
+       width:300px;
+       height:40px;
+       border:1px solid grey;
+   
+   }
+   .pincode-button{
+       width:130px;
+       height:40px;
+       border-radius:24px;
+       color:white;
+       background-color: black;
+       margin-left:20px;
+       
+   
+   }
+.pincode_input{
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
 }
+.text-rec h3{
+    color:black;
+    font-size:18px;
+    font-weight:bold;
+    margin-top:50px;
+    margin-left:24px;
+    }
+.carousel-images{
+    display:flex;
+   
+    justify-content: space-evenly;
+    overflow-x: none;
+    margin: 24px;
+    margin-top: 40px;
+    
+   
+}
+.carousel-images::-webkit-scrollbar {
+    display: none;
+}
+
+
 .content-text{
     font-size:14px;
     color:#FFF;
@@ -168,43 +249,8 @@ margin-top:20px;
 }
 .main-text img{
     width:36px;
-    height:36px;
-
-    
-}
-.details-text,.price-text{
-    font-size:14px;
-    color:black;
-    font-weight:bold;
-}
-.price-text-button{
-    width:72px;
-    height:20px;
-    background:#FFEDEC;
-    color:#FC4035;
-    font-size:14px;
-    font-weight:bold;
-
-}
-.inside-card-1{
-    display:flex;
-    width:500px;
-    height:48px;
-    background:white;
-}
-.inside-card-2{
-    display:flex;
-    width:500px;
-    height:48px;
-    background:white;
-}
-.inside-card-3{
-    display:flex;
-    width:500px;
-    height:48px;
-    background:white;
-}
-.main-text{
+    height:36px;}
+    .main-text{
 display:flex;
 justify-content: space-around;
 
@@ -212,65 +258,9 @@ justify-content: space-around;
 .price-text{
     margin-left:140px;
 }
-.chechbox-text img{
-width:16px;
-height:16px;
-}
-.chechbox-text{
-font-size:12px;
-color:#666666;
-}
-.checkbox-flex{
-    display:flex;
-}
-.pp1{
-    margin-left:40px;
-}
-.pp2{
-    margin-left:48px;
-}
-.pp3{
-    margin-left:42px;
-}
-.pt-1{
-    margin-right:-10px;
-}
-.pt-2{
-    margin-right:-33px;
-}
-.pt-3{
-    margin-right:-10px;
-}
+
 .details-text span{
-    margin-left:40px;
-
-}
-.pincode h3{
- font-size:16px;
- font-weight:bold;
- color:black;
- margin-top:20px;
-}
-.pincode input{
-    width:300px;
-    height:40px;
-    border:1px solid grey;
-
-}
-.pincode-button{
-    width:130px;
-    height:25px;
-    border-radius:10px;
-    color:white;
-    background-color: black;
-    margin-left:20px;
-    margin-top:15px;
-
-}
-form{
-    display:flex;
-    margin-top:15px;
-}
+    margin-left:40px;}
 .side-images{
     display:flex;
     margin-top:15px;
@@ -292,9 +282,11 @@ form{
 }
 .image-1{
     border-radius:10px;
+    margin-left: 60px;
 }
 .image-2{
     border-radius:10px;
+    margin-left: 60px;
 }
 .image-price{
     color:#FE122F;
@@ -307,25 +299,8 @@ color:black;
 font-size:16px;
 font-weight:bold;
 }
-.carousel-images{
-    display:flex;
-    margin-top:20px;
-    margin-left:290px;
-    justify-content: space-between;
-    overflow-x: auto;
-    margin-right:180px;
-    margin-bottom:60px;
-}
-.carousel-images::-webkit-scrollbar {
-    display: none;
-}
-.text-rec h3{
-color:black;
-font-size:18px;
-font-weight:bold;
-margin-top:50px;
-margin-left:280px;
-}
+
+
 .t-1{
     font-size:14px;
     color:black;
@@ -338,7 +313,7 @@ margin-left:280px;
 .text-nav{
     display:flex;
     margin-top:20px;
-    margin-left:280px;
+    margin-left:40px;
     margin-bottom:30px;
 
 }
@@ -353,6 +328,55 @@ margin-left:280px;
     height:auto;
     background:white;
     height:18520px;
-    margin-left:280px;
-    margin-top:40px;
+     margin-top:40px;
+}
+@media(300px<=width<=600px)
+{
+    .nav-title
+    {
+        display: none;
+    }
+
+    .nav-items
+    {
+        text-align: center;
+        margin-left: 30% ;
+    }
+    .first-div
+    {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .image-1
+    {
+        margin-left: 10px;
+    }
+    .image-2
+    {
+        margin-left: 10px;
+    }
+    .details-part
+    {
+        margin-left: 10px;
+        text-align: left;
+    }
+    .text-rec
+    {
+        margin-top:px;
+    }
+    .carousel-images
+    {
+       flex-wrap: wrap;
+       overflow: hidden;
+       margin-left: 10px;
+    }
+    .each-image
+    {
+        flex-direction: column;
+    }
+    .images-card
+    {
+        width: fit-content;
+        margin-left: 10px ;
+    }
 }

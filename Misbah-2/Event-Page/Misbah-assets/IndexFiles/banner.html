@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/b2c00ac6e0.js" crossorigin="anonymous"></script>
+    <title>Slider CSS</title>
+
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
+        <div class="image">
+            <img src="./svg's & images/Banner-Images/Banner-1.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="./svg's & images/Banner-Images/Banner-2.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="./svg's & images/Banner-Images/Banner-3.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="./svg's & images/Banner-Images/Banner-4.webp" alt="">
+        </div>
+        <div class="image">
+            <img src="./svg's & images/Banner-Images/Banner-5.webp" alt="">
+        </div>
+        <div class="button">
+            <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+            <a onclick="nextimg(1)" class="next">&#10095;</a>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <div class="mob lg:hidden items-center">
+        <div class="imagemob">
+            <img src="../Index files/svg's & images/Banner-Images/Banner-1-Mobile.webp" alt="">
+        </div>
+        <div class="imagemob">
+            <img src="./svg's & images/Banner-Images/Banner-2-Mobile.webp" alt="">
+        </div>
+        <div class="imagemob">
+            <img src="./svg's & images/Banner-Images/Banner-3-Mobile.webp" alt="">
+        </div>
+        <div class="imagemob">
+            <img src="./svg's & images/Banner-Images/Banner-4-Mobile.webp" alt="">
+        </div>
+        <div class="imagemob">
+            <img src="./svg's & images/Banner-Images/Banner-5-Mobile.webp" alt="">
+        </div>
+        <div class="buttonmob">
+            <a onclick="nextimgmob(-1)" class="prev">&#10094;</a>
+            <a onclick="nextimgmob(1)" class="next">&#10095;</a>
+        </div>
+        <div class="dotsmob">
+            <span class="dot" onclick="currentSlidemob(1)"></span>
+            <span class="dot" onclick="currentSlidemob(2)"></span>
+            <span class="dot" onclick="currentSlidemob(3)"></span>
+            <span class="dot" onclick="currentSlidemob(4)"></span>
+            <span class="dot" onclick="currentSlidemob(5)"></span>
+        </div>
+    </div>
+    <script>
+
+        var imageno =1;
+        displayimg(imageno);
+
+        function nextimg(n){
+            displayimg(imageno += n)
+        }
+
+        function currentSlide(n){
+            displayimg(imageno = n)
+        }
+
+        function displayimg(n){
+            var i;
+            var image = document.getElementsByClassName("image");
+            var dots = document.getElementsByClassName("dot");
+
+            if(n > image.length){
+                imageno = 1;
+            }
+
+            if(n < 1){
+                imageno = image.length;
+            }
+
+            for(i=0; i < image.length; i++){
+                image[i].style.display = "none";
+            }
+
+            for(i=0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            image[imageno - 1].style.display ="block";
+            dots[imageno - 1].className += " active";
+
+        }
+        var imagemob =1;
+        displayimgmob(imagemob);
+
+        function nextimgmob(n){
+            displayimgmob(imagemob += n)
+        }
+
+        function currentSlidemob(n){
+            displayimgmob(imagemob = n)
+        }
+
+        function displayimgmob(n){
+            var i;
+            var image = document.getElementsByClassName("imagemob");
+            var dots = document.getElementsByClassName("dot");
+
+            if(n > image.length){
+                imagemob = 1;
+            }
+
+            if(n < 1){
+                imagemob = image.length;
+            }
+
+            for(i=0; i < image.length; i++){
+                image[i].style.display = "none";
+            }
+
+            for(i=0; i < dots.length; i++){
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            image[imagemob - 1].style.display ="block";
+            dots[imagemob - 1].className += " active";
+
+        }
+
+    </script>   
+</body>
+</html>
