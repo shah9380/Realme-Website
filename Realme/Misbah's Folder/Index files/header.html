@@ -58,8 +58,12 @@
                     <a href="https://flowbite.com" class="hidden lg:flex items-center">
                         <img src="./svg's & images/Search Icon.svg" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
                     </a>
-                    <a href="https://flowbite.com" class="lg:hidden items-center">
-                        <img src="./svg's & images/icons8-user-32.png" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+                    <a href="#" class="lg:hidden items-center">
+                        <div class="flex flex-row justify-center max-w-screen-xl mx-auto">
+                            <div class="flex-none p-2 w-full">
+                                <img onclick="showDropdownOptionsUser()" src="./svg's & images/icons8-user-32.png" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+                            </div>
+                        </div>
                     </a>
                     <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
@@ -593,6 +597,24 @@
             </div>
         </nav>
     </header>
-    
+    <div id="optionsUser" class="hidden w-full absolute h-full py-2 bg-white">
+        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Cart</a>
+        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">My Order</a>
+        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Coupon</a>
+        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">R-Pass</a>
+        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Reviews</a>
+        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Account</a>
+        <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Address</a>
+        <div class="px-6 mt-2">
+            <a href="#" class="rounded-full bg-gray-100 block py-2 text-center text-black text-[12px] font-semibold hover:text-orange-300">Login</a>
+        </div>
+    </div>
+    <script>
+        function showDropdownOptionsUser() {
+            document.getElementById("optionsUser").classList.toggle("hidden");
+            document.getElementById("arrow-down1").classList.toggle("hidden");
+            document.getElementById("arrow-up1").classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>

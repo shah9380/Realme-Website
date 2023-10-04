@@ -64,8 +64,12 @@
             <a href="https://flowbite.com" class="hidden lg:flex items-center">
                 <img src="./Misbah-assets/IndexFiles/svgandImages/Search-Icon.svg" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
             </a>
-            <a href="https://flowbite.com" class="lg:hidden items-center">
-                <img src="./Misbah-assets/IndexFiles/svgandImages/icons8-user-32.png" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+            <a class="lg:hidden items-center">
+                <div class="flex flex-row justify-center max-w-screen-xl mx-auto">
+                    <div class="flex-none p-2 w-full">
+                        <img onclick="showDropdownOptionsUser()" src="./Misbah-assets/IndexFiles/svgandImages/icons8-user-32.png" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+                    </div>
+                </div>
             </a>
             <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
@@ -101,6 +105,18 @@
     </div>
 </nav>
 </header>
+<div id="optionsUser" class="hidden w-full z-10 absolute h-full py-2 bg-white">
+    <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Cart</a>
+    <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">My Order</a>
+    <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Coupon</a>
+    <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">R-Pass</a>
+    <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Reviews</a>
+    <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Account</a>
+    <a href="#" class="block pl-6 py-2 text-gray-900 text-[12px] font-semibold hover:text-orange-300">Address</a>
+    <div class="px-6 mt-2">
+        <a href="./raj/login.html" class="rounded-full bg-gray-100 block py-2 text-center text-black text-[12px] font-semibold hover:text-orange-300">Login</a>
+    </div>
+</div>
 <!--Carousel Part- Banner Section-->
     <div class="div hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
         <div class="image bg-center bg-cover h-full w-full px-[10%] py-[10%]" style="background-image: url('./Misbah-assets/IndexFiles/Banner-1.webp');">
@@ -1090,6 +1106,13 @@
             </div>
         </div>
     </footer>
+    <script>
+        function showDropdownOptionsUser() {
+            document.getElementById("optionsUser").classList.toggle("hidden");
+            document.getElementById("arrow-down1").classList.toggle("hidden");
+            document.getElementById("arrow-up1").classList.toggle("hidden");
+        }
+    </script>
     <script>
         function showDropdownOptions1() {
             document.getElementById("options1").classList.toggle("hidden");
