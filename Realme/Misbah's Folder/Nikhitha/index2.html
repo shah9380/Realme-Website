@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="https://kit.fontawesome.com/6604ef9bb8.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b2c00ac6e0.js" crossorigin="anonymous"></script>
     <title>App</title>
@@ -48,7 +49,7 @@
                     </ul>
                 </div>
             </div>
-    <header>
+    <header class="fixed-header">
         <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white">
             <div class="flex flex-wrap justify-between items-center my-3 mx-auto max-w-screen-xl">
                 <a href="https://www.realme.com/in/" class="flex items-center">
@@ -139,31 +140,31 @@
             <button class="button-2">Earn Coins</button>
           </div>
           <div class="ullist-1">
-            <ul>
+            <ul class="unordered-list">
                 <li>Amazing realme Festive Offer: From 7:00 PM to 11:59 PM on 2nd Oct</li>
-                <li>realme VIP Benefit: 50% off on realme Care+ | 10,000 coins reward on first order
-                    <span><a href="https://event.realme.com/in/realme-membership-brief">Learn more</a></span>
+                <li>realme VIP Benefit: 50% off on realme Care+ | 10,000 coins <br>
+                    <span>reward on first order <a href="https://event.realme.com/in/realme-membership-brief">Learn more</a></span>
                 </li>
-                <li>【NEW】Save 18%: Get GST invoice and save 18% on business purchase.
-                    <span><a href="https://event.realme.com/in/realme-membership-brief">Learn more</a></span>
+         <li>【NEW】Save 18%: Get GST invoice and save 18% on business purchase.<br>
+                    <span><a href="https://event.realme.com/in/realme-membership-brief"> Learn more</a></span>
                 </li>
-                <li> MobiKwik Offer: Get Upto 20% Cashback  <a href="https://www.realme.com/in/offer/mobikwik">Learn more</a></li>
+                <li> MobiKwik Offer: Get Upto 20% Cashback  <a href="https://www.realme.com/in/offer/mobikwik"> Learn more</a></li>
             </ul>
         </div>
            <div class="color-box">
             <!-- <span class="goods-color" style="background: linear-gradient(328deg, rgb(136, 192, 191) 0px, rgb(124, 203, 198) 100%);"></span> -->
             <h3>Color</h3>
             <div class="color-box-flex">
-            <p class="icon-1"><i class="fa-solid fa-circle"></i>  Mint Green</p>
-            <p class="icon-2"><i class="fa-solid fa-circle"></i>  Carbon Black</p>
+            <p class="icon-1">Mint Green</p>
+            <p class="icon-2">Carbon Black</p>
             </div>
             <div class="storage-box">
                 <h3>Storage</h3>
                 <p class="button-3">4GB+64GB</p>
             </div>
             <div class="Quantity">
-                <h3>Quality</h3>
-                <p class="button-4"><i class="fa-solid fa-minus"></i> 1  <i class="fa-sharp fa-light fa-plus"></i></p>
+                <h3>Quantity</h3>
+                <p class="button-4"><i class="fa-solid fa-minus"></i> 1 <i class="fa-sharp fa-light fa-plus"></i></p>
             </div>
             <div class="realme-card">
                 <div class="header-card">
@@ -171,34 +172,45 @@
                 </div>
                 <div class="inside-card-1">
                     <div class="main-text">
-                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673406846170.png.webp"><span>Accidental Warranty (1 Year)</span> </p>
-                        <p class="price-text pt-1">₹345</p>
-                        <p class="price-text-button pp1">₹344 Off</p>
+                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673406846170.png.webp"></p>
+                        <p class="text-details-flex">Accidental Warranty (1 Year)</p>
                     </div>
+                        <div class="right-text">
+                            <p class="details-text dt-1">₹345 <span class="price-text pt-1">₹344 Off</span></p>
+                            <!-- <p class="price-text pt-1">₹344 Off</p> -->
+                        </div>
                 </div><br>
                 <div class="inside-card-2">
                     <div class="main-text">
-                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673406569344.png.webp"><span>Extended Warranty(1 Year)</span> </p>
-                        <p class="price-text pt-2">₹295 </p>
-                        <p class="price-text-button pp2">₹294 Off</p>
+                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673406569344.png.webp"></p>
+                        <p class="text-details-flex">Extended Warranty(1 Year)</p>
                     </div>
+                        <div class="right-text">
+                            <p class="details-text dt-2">₹295 <span class="price-text pt-2">₹294 Off</span></p>
+                            <!-- <p class="price-text pt-2">₹294 Off</p> -->
+                        </div>
                 </div><br>
                 <div class="inside-card-3">
                     <div class="main-text">
-                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673404935489.png.webp"><span>Screen Damage Protection (1 Year)</span> </p>
-                        <p class="price-text pt-3">₹245</p>
-                        <p class="price-text-button pp3" >₹244 Off</p>
+                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673404935489.png.webp"></p>
+                        <p class="text-details-flex">Screen Damage Protection (1 Year)</p>
                     </div>
+                        <div class="right-text">
+                            <p class="details-text dt-3">₹245  <span class="price-text pt-3">₹244 Off</span></p>
+                            <!-- <p class="price-text pt-3">₹244 Off</p> -->
+                        </div>
+                
                 </div>
                     <div class="checkbox-flex">
-                        <p class="chechbox-text"><img src="https://r2.realme.net/img/ic_unselected.67bc4163.svg"> <span>I agree to realme Protection Plan T&C</span>
+                        <p class="chechbox-text"><img src="https://r2.realme.net/img/ic_unselected.67bc4163.svg"></p>
+                        <p class="link-text">I agree to<a href="https://www.realme.com/in/legal/realme-protection"> realme Protection Plan T&C</a></p>
                     </div>
                    
             </div>
             <div class="pincode">
                 <h3>Pincode</h3>
                 <form>
-                    <input type="text" placeholder="Enter pincode for delivery details"><br>
+                    <input class="input-button" type="text" placeholder="Enter pincode for delivery details"><br>
                     <button class="pincode-button">check</button>
                 </form>
             </div>
@@ -211,53 +223,55 @@
         <div class="text-rec">
          <h3>Recommended</h3>
         </div>
-     <div class="carousel-images">
-       <div class="each-image">
+        <div class="main-carousel" data-flickity='{ "cellAlign": "center", "groupCells": 6}'>
+     <!-- <div class="carousel-images"> -->
+        <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230816/169217909841167ae33fdd1934aee909e24195d52e295.png.webp?width=1440&height=1440&size=463451" width="130" height="130">
         <h3>realme 11x 5G</h3>
         <p class="image-price">₹14,999</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230705/16885310238596ce574a854b4450d838f5d7ffb6992d4.png.webp?width=1440&height=1440&size=730480" width="130" height="130">
         <h3>realme narz0 60 5G</h3>
         <p class="image-price">₹17,999</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230608/1686196034266e84391de43944a599cdec535212ef4f6.png.webp?width=1440&height=1440&size=710277" width="130" height="130">
         <h3>realme 11 Pro+5G</h3>
         <p class="image-price">₹27,999</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230613/1686628327928ed45b2eaa8e0461b84b9ccb33f1a1f14.png.webp?width=1440&height=1440&size=706351" width="130" height="130">
         <h3>realme 11 Pro 5G</h3>
         <p class="image-price">₹23,999</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230512/1683873836923.png.webp?width=1440&height=1440&size=544990" width="130" height="130">
         <h3>realne narzo N53</h3>
         <p class="image-price">₹8,999</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230718/16896509943742cfb61eae375450f947cdd15abdae7b1.png.webp?width=1440&height=1440&size=477649" width="130" height="130">
         <h3>realme C53</h3>
         <p class="image-price">₹9,999</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230905/1693907146241d0fccc76cf12426e93d0c45a1a8166a2.png.webp?width=1440&height=1440&size=626977" width="130" height="130">
         <h3>reamle narzo 60x 5G</h3>
         <p class="image-price">₹12,999</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230810/1691642674931f03d46c07dd34825ac13bd9e3b76b7dc.png.webp?width=1440&height=1440&size=236964" width="130" height="130">
         <h3>realme Buds Air 5 </h3>
         <p class="image-price">₹3,499</p>
        </div>
-       <div class="each-image">
+       <div class="carousel-cell">
         <img src="https://image01.realme.net/general/20230906/1693972130157e135186bb9304b4a978a37bf185e1a68.png.webp?width=1440&height=1440&size=457703" width="130" height="130">
         <h3>realme Buds T300 </h3>
         <p class="image-price">₹2,199</p>
        </div>
      </div>
+    <!-- </div> -->
     </div>
     
     <hr>
@@ -316,26 +330,129 @@
         <img src="https://image01.realme.net/general/20230904/169379972477658d34a1109c545469ee2cc2eeba3378e.jpg.webp?width=2280&height=730&size=796839" width="1140" height="350">
         <img src="https://image01.realme.net/general/20230904/16937997299719891ce5f61aa4699ba1082974f786176.jpg.webp?width=2280&height=700&size=415232" width="1140" height="350">
         <img src="https://image01.realme.net/general/20230904/1693799735347979def6547ae4640a02e6f2949884953.jpg.webp?width=2280&height=726&size=524380" width="1140" height="363">
-        <img src="" width="1140" height="">
-        <img src="" width="1140" height="">
-        <img src="" width="1140" height="">
-        <img src="" width="1140" height="">
-        <img src="" width="1140" height="">
-        <img src="" width="1140" height="">
+        <img src="https://image01.realme.net/general/20230904/1693799740641abdb97b04c9c4efc969dbdf95e4845e9.jpg.webp?width=2280&height=1578&size=547704" width="1140" height="780">
+    </div>
+</div>
+    
+<div class="service-devision">
+    <div class="servicecard sp1">
+        <img src="https://image01.realme.net/general/20220811/1660218890969.svg" width="30" height="30">
+        <h3>Free Shipping</h3>
+        <p>Available for orders above ₹ 500</p>
+    </div>
+    <div class="servicecard sp2">
+        <img src="https://image01.realme.net/general/20220811/1660218977120.svg" width="30" height="30">
+        <h3>Cash On Delivery</h3>
+        <p>Supports Payments On Delivery</p>
+    </div>
+    <div class="servicecard sp3">
+        <img src="https://image01.realme.net/general/20220811/1660218953359.svg" width="30" height="30">
+        <h3>Secure Payment</h3>
+        <p>realme Store offers various payment</p>
+        <p>options</p>
+    </div>
+    <div class="servicecard sp4">
+        <img src="https://image01.realme.net/general/20220811/1660219025928.svg"width="30" height="30">
+        <h3>Warranty Pollcy</h3>
+        <p>This Warranty pollcy applies to all</p>
+        <p>reamle products only in india</p>
+    </div>
+</div>
+
+<div class="footer-section">
+  <div class="fotter-menu">
+    <div class="title-menu">
+    <h3>Recommended</h3>
+    </div>
+    <ul class="menu-list ml1">
+        <li>realme narzo 60x 5G</li>
+        <li>realme C51</li>
+        <li>realme 11 5G</li>
+        <li>realme 11x 5G</li>
+        <li>realme C53</li>
+        <li>realme narzo 60 5G</li>
+        <li>realme narzo 60 Pro 5G</li>
+        <li>realme 11 Pro 5G</li>
+        <li>realme 11 Pro+ 5G</li>
+        <li>More phones</li>
+    </ul>
+  </div>
+  <div class="fotter-menu tm-2">
+    <div class="title-menu">
+    <h3>Support</h3>
+    </div>
+    <ul class="menu-list">
+        <li>realme VIP</li>
+        <li>realme care+</li>
+        <li>FAQ</li>
+        <li>User Guide</li>
+        <li>Service Centers</li>
+        <li>realme Coins</li>
+        <li>E-waste Management</li>
+        <li>realme Exchange T&C</li>
+        <li>UI 4.0</li>
+    </ul>
+  </div>
+  <div class="fotter-menu">
+    <div class="title-menu tm-3">
+    <h3>About realme</h3>
+    </div>
+    <ul class="menu-list">
+        <li>Our Brand</li>
+        <li>Newsroom</li>
+        <li>Retail Store</li>
+        <li>Declaration</li>
+        <li>realmeow</li>
+    </ul>
+  </div>
+  <div class="fotter-menu">
+    <div class="title-menu tm-4">
+    <h3>Contact realme</h3>
+    </div>
+    <ul class="menu-list">
+        <li>HR: HR@realme.com</li>
+        <li>PR: indiapr@realme.com</li>
+        <li>Legal: legal.in@realme.com</li>
+        <li>Marketing: marketing.in@realme.com</li>
+    </ul>
+  </div>
+  <div class="support-section">
+    <div class="button-support">
+    <p><img src="chat-support.png"></p>
+        <p class="chat-text">CHAT SUPPORT</p>
+    </div>
+    <div class="text-support">
+        <p>9:00-21:00, MON-SUN</p>
+        <p>Including Holidays</p>
+        <h3>1800 102 2777</h3>
+    </div>
+    <div class="social-icons">
+        <p class="icon-flex"><i class="fa-brands fa-facebook"></i></p>
+        <p class="icon-flex"><i class="fa-brands fa-twitter"></i></p>
+        <p class="icon-flex"><i class="fa-brands fa-youtube"></i></p>
+        <p class="icon-flex"><i class="fa-brands fa-instagram"></i></p>
     </div>
   </div>
-   
 
 
+</div>
+<p class="bottom-address">India ( English / INR )</p>
+<hr class="bottom-line">
 
 
-
-
-
-
-
-
+</div>
+<footer class="footer">
+    <div class="footer-text">
+        <h3>realme C51</h3>
     </div>
+    <div class="footer-right-flex">
+        <h3>₹8,999</h3>
+        <button class="footer-button-1">Add To Cart</button>
+        <button class="footer-button-2">Buy Now</button>
+    </div>
+</footer> 
+
 <!-- </div> -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>
