@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url("back-login.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    width: 100%;
+}
+.header-div{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header a:hover{
+    opacity: 0.5;
+}
+.header-div img{
+    vertical-align: middle;
+}
+.hide {
+    margin:20px 32px;
+    visibility: hidden;
+}
+
+li{
+    list-style-type: none;
+    padding: 15px 10px;
+}
+.eng:hover ~ .hide{
+    visibility: visible;
+}
+
+.input-box img{
+    vertical-align: middle;
+    width: 18px;
+}
+input{
+    width:85%;
+    height: 30px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.heading{
+    font-size: 30px;
+}
+.pass{
+    width: 95%;
+}
+@media (min-width:350px) and (max-width:522px) {
+    .pass{
+        width: 92%;
+    }
+    .in-phone{
+        width: 80%;
+    }
+}
+@media (min-width:541px) {
+   main{
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    
+    .pass{
+        width: 90%;
+    }
+    .in-phone{
+        width: 80%;
+    }
+    .stable{
+        margin-left: -80px;
+    }
+  
+}
+/* @media (min-width:6px){
+    input{
+        width: 70%;
+    }
+} */
+.phone{
+    background-color:white;
+    margin: 95%;
+    margin: 20px auto;
+    height: 50px;
+    padding: 15px;
+    border-radius: 8px;
+}
+::placeholder{
+    color:gray;
+    font-size: 15px;
+    opacity: 0.6;
+}
+.forgot{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+
+}
+.forgot a{
+    text-decoration: none;
+    font-size: 12px;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+button{
+    border: none;
+    padding: 13px;
+    border-radius: 30px;
+    width: 220px;
+    margin: 15px auto;
+    color: #fff;
+    background-color: #e6e6e6
+}
+.other{
+    font-size: 11px;
+    color: gray;
+    font-weight: bold;
+    opacity: 0.4;
+}
+.mail{
+    padding-top: 15px;
+    width: 50px;
+}
+footer{
+    padding-top: 40px;
+}
+.agreement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    opacity: 0.5;
+}
+.agreement p, .copyright p{
+    padding: 12px;
+}
+.agreement p:hover, .copyright p:hover{
+   opacity: 0.5;
+}
+footer a{
+    text-decoration: none;
+    color: unset;
+}
+.copyright{
+    font-size: 12px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    display: none;
+}
+
+@media (min-width:961px){
+    .email{
+        display: block;
+        opacity: 0.5;
+        font-size: 12px;
+    }
+    .header-div{
+        width: 97%;
+        padding-top: 30px;
+       
+    }
+    .stable{
+        margin-left: unset;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    header{
+        padding-bottom: 60px;
+    }
+    main{
+        width: 53%;
+        background-color: white;
+        padding: 50px;
+        border-radius: 30px;
+        box-shadow:  5px -5px 28px #d6d6d6,
+             -5px 5px 28px #ffffff;
+    }
+    .heading{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    .phone{
+        background-color: rgba(237, 236, 236, 0.5);
+    }
+    input{
+        width:85%;
+        height: 30px;
+        background-color: rgba(237, 236, 236, 0.2);
+        border: none;
+        outline: none;
+    }
+    ::placeholder{
+        color:gray;
+        font-size: 15px;
+        opacity: 0.6;
+    }
+    
+}
+@media  (min-width:1100px) {
+    main{
+        width: 35%;
+    }
+     .agreement{
+        font-size: 14px;
+    }
+
+}
