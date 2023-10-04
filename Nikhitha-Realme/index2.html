@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://kit.fontawesome.com/6604ef9bb8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b2c00ac6e0.js" crossorigin="anonymous"></script>
+    <title>App</title>
+</head>
+<body>
+            <div class="Header-plus flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 my-2" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:pl-0 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Brand</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">App</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Community</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Support</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">realme VIP</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 lg:dark:hover:text-orange-300">5G</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">Login</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:py-0 border-r-2 lg:dark:hover:text-orange-300">My Order</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-xs text-black lg:px-3 lg:pr-4 lg:py-0 lg:dark:hover:text-orange-300">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    <header class="fixed-header">
+        <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-white">
+            <div class="flex flex-wrap justify-between items-center my-3 mx-auto max-w-screen-xl">
+                <a href="https://www.realme.com/in/" class="flex items-center">
+                    <img src="./Realme-Logo.svg" class="mr-3 h-6 sm:h-6" alt="Realme Logo" />
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <a href="https://flowbite.com" class="hidden lg:flex items-center">
+                        <img src="./Search Icon.svg" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+                    </a>
+                    <a href="https://flowbite.com" class="lg:hidden items-center">
+                        <img src="./icons8-user-32.png" class="mr-3 h-7 sm:h-7" alt="Flowbite Logo" />
+                    </a>
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 ease-in-out text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">Realme Festive</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">New Launch</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-sm lg:p-0 lg:dark:hover:text-orange-300">realme Phones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">narzo Phones</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">Audio</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-sm text-black lg:p-0 lg:dark:hover:text-orange-300">Tablet & Wearable</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 pr-4 pl-3 transition duration-300 text-sm lg:p-0 lg:dark:hover:text-orange-300">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <!--div section Main (goods page)-->
+
+    <div id="app" class="goods">
+    <div class="goods-navbar">
+    <!-- <div class="wrapper"> -->
+        <div class="nav-title">
+        <p>realme C51</p>
+        </div>
+        <ul class="nav-items">
+            <li class="item1"><a href="https://www.realme.com/in/realme-c51">Overview</a></li>
+            <li class="item2"><a href="https://www.realme.com/in/realme-c51/specs">Specs</a></li>
+            <li class="item3"><a href="">R-Pass</a></li>
+        </ul>
+   
+    </div>
+    <hr>
+    <!--first div-->
+    <div class="first-div">
+    <div class="image-part">
+     <div class="main-image">
+        <img class="image-1" src="https://image01.realme.net/general/20231001/1696144194684c02102144891499a85329450ccd2b517.jpg.webp?width=1080&height=1080&size=118708" width="460" height="460">
+     </div>
+     <div>
+    <ul class="side-images">
+        <li><img class="image-2" src="https://image01.realme.net/general/20231001/1696144194684c02102144891499a85329450ccd2b517.jpg.webp?width=1080&height=1080&size=118708" width="84" height="84"></li>
+        <li><img src="https://image01.realme.net/general/20230831/16934543994551854a5c5f6d146f2b7e6c3c4bb51b0b7.png.webp?width=1440&height=1440&size=322792" width="84" height="84"></li>
+        <li><img src="https://image01.realme.net/general/20230831/1693454404163c7f680e660a0412f918202da20554653.png.webp?width=1440&height=1440&size=142905" width="84" height="84"></li>
+        <li><img src="https://image01.realme.net/general/20230831/16934544084119059be868d8e473ab42ac3bdc24aec23.png.webp?width=1440&height=1440&size=94958" width="84" height="84"></li>
+        <li><img src="https://image01.realme.net/general/20230831/1693454412986e6668067114d4e348f16b8ed648ab79c.png.webp?width=1440&height=1440&size=200022" width="84" height="84"></li>
+
+    </ul>
+     </div>
+    </div>
+        <div class="details-part">
+          <div class="heading">
+            <h3>realme C51</h3>
+            <p class="red-price">₹8,999 <i class="fa-thin fa-circle-info"></i></p>
+          </div>
+          <div class="button1">
+            <button  class="button-1">New</button>
+            <button class="button-2">Earn Coins</button>
+          </div>
+          <div class="ullist-1">
+            <ul class="unordered-list">
+                <li>Amazing realme Festive Offer: From 7:00 PM to 11:59 PM on 2nd Oct</li>
+                <li>realme VIP Benefit: 50% off on realme Care+ | 10,000 coins <br>
+                    <span>reward on first order <a href="https://event.realme.com/in/realme-membership-brief">Learn more</a></span>
+                </li>
+         <li>【NEW】Save 18%: Get GST invoice and save 18% on business purchase.<br>
+                    <span><a href="https://event.realme.com/in/realme-membership-brief"> Learn more</a></span>
+                </li>
+                <li> MobiKwik Offer: Get Upto 20% Cashback  <a href="https://www.realme.com/in/offer/mobikwik"> Learn more</a></li>
+            </ul>
+        </div>
+           <div class="color-box">
+            <!-- <span class="goods-color" style="background: linear-gradient(328deg, rgb(136, 192, 191) 0px, rgb(124, 203, 198) 100%);"></span> -->
+            <h3>Color</h3>
+            <div class="color-box-flex">
+            <p class="icon-1">Mint Green</p>
+            <p class="icon-2">Carbon Black</p>
+            </div>
+            <div class="storage-box">
+                <h3>Storage</h3>
+                <p class="button-3">4GB+64GB</p>
+            </div>
+            <div class="Quantity">
+                <h3>Quantity</h3>
+                <p class="button-4"><i class="fa-solid fa-minus"></i> 1 <i class="fa-sharp fa-light fa-plus"></i></p>
+            </div>
+            <div class="realme-card">
+                <div class="header-card">
+                    <p class="content-text">We Care, For Real.</p>
+                </div>
+                <div class="inside-card-1">
+                    <div class="main-text">
+                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673406846170.png.webp"></p>
+                        <p class="text-details-flex">Accidental Warranty (1 Year)</p>
+                    </div>
+                        <div class="right-text">
+                            <p class="details-text dt-1">₹345 <span class="price-text pt-1">₹344 Off</span></p>
+                            <!-- <p class="price-text pt-1">₹344 Off</p> -->
+                        </div>
+                </div><br>
+                <div class="inside-card-2">
+                    <div class="main-text">
+                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673406569344.png.webp"></p>
+                        <p class="text-details-flex">Extended Warranty(1 Year)</p>
+                    </div>
+                        <div class="right-text">
+                            <p class="details-text dt-2">₹295 <span class="price-text pt-2">₹294 Off</span></p>
+                            <!-- <p class="price-text pt-2">₹294 Off</p> -->
+                        </div>
+                </div><br>
+                <div class="inside-card-3">
+                    <div class="main-text">
+                        <p class="details-text"><img src="https://image01.realme.net/general/20230111/1673404935489.png.webp"></p>
+                        <p class="text-details-flex">Screen Damage Protection (1 Year)</p>
+                    </div>
+                        <div class="right-text">
+                            <p class="details-text dt-3">₹245  <span class="price-text pt-3">₹244 Off</span></p>
+                            <!-- <p class="price-text pt-3">₹244 Off</p> -->
+                        </div>
+                
+                </div>
+                    <div class="checkbox-flex">
+                        <p class="chechbox-text"><img src="https://r2.realme.net/img/ic_unselected.67bc4163.svg"></p>
+                        <p class="link-text">I agree to<a href="https://www.realme.com/in/legal/realme-protection"> realme Protection Plan T&C</a></p>
+                    </div>
+                   
+            </div>
+            <div class="pincode">
+                <h3>Pincode</h3>
+                <form>
+                    <input class="input-button" type="text" placeholder="Enter pincode for delivery details"><br>
+                    <button class="pincode-button">check</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <div class="Recommended">
+        <div class="text-rec">
+         <h3>Recommended</h3>
+        </div>
+        <div class="main-carousel" data-flickity='{ "cellAlign": "center", "groupCells": 6}'>
+     <!-- <div class="carousel-images"> -->
+        <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230816/169217909841167ae33fdd1934aee909e24195d52e295.png.webp?width=1440&height=1440&size=463451" width="130" height="130">
+        <h3>realme 11x 5G</h3>
+        <p class="image-price">₹14,999</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230705/16885310238596ce574a854b4450d838f5d7ffb6992d4.png.webp?width=1440&height=1440&size=730480" width="130" height="130">
+        <h3>realme narz0 60 5G</h3>
+        <p class="image-price">₹17,999</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230608/1686196034266e84391de43944a599cdec535212ef4f6.png.webp?width=1440&height=1440&size=710277" width="130" height="130">
+        <h3>realme 11 Pro+5G</h3>
+        <p class="image-price">₹27,999</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230613/1686628327928ed45b2eaa8e0461b84b9ccb33f1a1f14.png.webp?width=1440&height=1440&size=706351" width="130" height="130">
+        <h3>realme 11 Pro 5G</h3>
+        <p class="image-price">₹23,999</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230512/1683873836923.png.webp?width=1440&height=1440&size=544990" width="130" height="130">
+        <h3>realne narzo N53</h3>
+        <p class="image-price">₹8,999</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230718/16896509943742cfb61eae375450f947cdd15abdae7b1.png.webp?width=1440&height=1440&size=477649" width="130" height="130">
+        <h3>realme C53</h3>
+        <p class="image-price">₹9,999</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230905/1693907146241d0fccc76cf12426e93d0c45a1a8166a2.png.webp?width=1440&height=1440&size=626977" width="130" height="130">
+        <h3>reamle narzo 60x 5G</h3>
+        <p class="image-price">₹12,999</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230810/1691642674931f03d46c07dd34825ac13bd9e3b76b7dc.png.webp?width=1440&height=1440&size=236964" width="130" height="130">
+        <h3>realme Buds Air 5 </h3>
+        <p class="image-price">₹3,499</p>
+       </div>
+       <div class="carousel-cell">
+        <img src="https://image01.realme.net/general/20230906/1693972130157e135186bb9304b4a978a37bf185e1a68.png.webp?width=1440&height=1440&size=457703" width="130" height="130">
+        <h3>realme Buds T300 </h3>
+        <p class="image-price">₹2,199</p>
+       </div>
+     </div>
+    <!-- </div> -->
+    </div>
+    
+    <hr>
+  
+    <div class="text-nav">
+        <p class="t-1">overview</p>
+        <p class="t-2">Reviews(441)</p>
+    </div>
+   
+  <div class="second-div">
+    <div class="images-card">
+        <img src="https://image01.realme.net/general/20230928/1695882526202.jpg?size=180066&width=2280&height=720"width="1140" height="360">
+        <img src="https://image01.realme.net/general/20230904/1693799423206bb951153b7ba41268a6f45f45fde74a7.jpg.webp?width=2280&height=1096&size=317650" width="1140" height="540">
+        <img src="https://image01.realme.net/general/20230904/169379945484810b3bddfa2d345a09c1eed6cc16f1cbb.jpg.webp?width=2280&height=1100&size=386349"width="1140" height="550">
+        <img src="https://image01.realme.net/general/20230904/1693799472880f974cc1c886d4f0d8c978d3002291668.jpg.webp?width=2280&height=700&size=269493" width="1140" height="440">
+        <img src="https://image01.realme.net/general/20230904/16937994788845c8152fa0db549cea4ab1a5991b187b3.jpg.webp?width=2280&height=700&size=200294"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937995068461bcbbc9da3ac450fa571fab465819fd0.jpg.webp?width=2280&height=700&size=571229"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/169379951572500c82950a96d425cbb2604df4493d86d.jpg.webp?width=2280&height=700&size=735809"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937995219414d699bfe7b9a4f4b99e861d0aa23d0b1.jpg.webp?width=2280&height=700&size=340846"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937995275033317b101c3c648f0a7d06c9443ab1a03.jpg.webp?width=2280&height=700&size=370203"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937995330854499783d397b48bc9300f52f8e2d5d03.jpg.webp?width=2280&height=700&size=132862"width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/169379953852960ec1fe3c7204c10a5757eb69f795bd3.jpg.webp?width=2280&amp;height=700&amp;size=448020" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937995444902184b630189a4d86964b1baa89a1dcbc.jpg.webp?width=2280&amp;height=700&amp;size=655113" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937995502607128d47ca01e4c5aaf726b97aaea94dc.jpg.webp?width=2280&height=700&size=380552" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799556032e6b099ecfd514225ab39488abe3a6445.jpg.webp?width=2280&height=800&size=505063" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230904/1693799561415b15bf614e72047c7b531d69c7b0caf57.jpg.webp?width=2280&height=800&size=636439" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230904/16937995674940c03989eacc04a7c81bd071284ae809a.jpg.webp?width=2280&height=800&size=616436" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230904/1693799573278d1c7bcfb374d4acbb2e98e4fc3cc923b.jpg.webp?width=2280&height=700&size=464166" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799578916925e896ca7c346f2a8deb57a8219b50c.jpg.webp?width=2280&height=700&size=1030773" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799584196cc03ad0b4c7547c28692c0a57b8dadc0.jpg.webp?width=2280&height=700&size=607654" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799589676f5d7315e339c450289b823f098c07f0d.jpg.webp?width=2280&height=700&size=653545" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/169379959469833dc1b5b575f40ea9ca6056d563e6594.jpg.webp?width=2280&height=700&size=388950" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799599968db46e3b38c97454a9937da4550a16de3.jpg.webp?width=2280&height=700&size=320760" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/169379960477169a454af6ded4229a13afe5b68b85bed.jpg.webp?width=2280&height=700&size=95507" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799610040236544a1bf9440deb19447b0732f8ffb.jpg.webp?width=2280&height=700&size=263073" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799614986ee6b08533b3142e5a71b8e1a2aeddd96.jpg.webp?width=2280&height=700&size=830068" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/169379961997319a5df1e3b65421f97dd25b8f14e4616.jpg.webp?width=2280&height=740&size=133172" width="1140" height="370">
+        <img src="https://image01.realme.net/general/20230904/1693799626528960824c0c17b4232ab561561f85a12bc.jpg.webp?width=2280&height=740&size=462551" width="1140" height="370">
+        <img src="https://image01.realme.net/general/20230904/1693799631901c2d0d1d9ef3f498eb7ddcc8c0a7cfa34.jpg.webp?width=2280&height=700&size=544529" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937996370216082e92a56d14f008355893125c3d30e.jpg.webp?width=2280&height=960&size=194252" width="1140" height="480">
+        <img src="https://image01.realme.net/general/20230904/16937996423470593897e3ca344adbd4ac63c385756ad.jpg.webp?width=2280&height=700&size=738353" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799648843e093b93a16a647f99f1569c3c9f74056.jpg.webp?width=2280&height=700&size=789822" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937996538463bc25c2bcf9643e6bdf229ebfb628191.jpg.webp?width=2280&height=700&size=108373" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937996607426308a6f9353b4330a15824d29c3b0dfb.jpg.webp?width=2280&height=668&size=311720" width="1140" height="334">
+        <img src="https://image01.realme.net/general/20230904/169379966652957bdcaf1b85e473391019ed1f3d0c864.jpg.webp?width=2280&height=700&size=480978" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799671398c01b9d3334c343ac9d73e1d3dd4e199b.jpg.webp?width=2280&height=700&size=212723" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799676510fa89af207c0e45f5b3fc714293bc8699.jpg.webp?width=2280&height=700&size=559860" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799682289a10915314d8d470c81b165ff15d58ce1.jpg.webp?width=2280&height=700&size=678967" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799687645fa6f9bf884f6451891bc3e02bc66dc5d.jpg.webp?width=2280&height=700&size=260581" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937996924374a1854ed5b1a402fb8421877f459a251.jpg.webp?width=2280&height=800&size=148756" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230904/1693799697947cf50e126186246ccac90576898844dd9.jpg.webp?width=2280&height=700&size=763061" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937997035876616bbf51929412db9f6a2b4e6bb792e.jpg.webp?width=2280&height=700&size=458060" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/169379970895470056c4b268c46eb830c12041cd66f87.jpg.webp?width=2280&height=800&size=465549" width="1140" height="400">
+        <img src="https://image01.realme.net/general/20230904/1693799714317235ba14badad4cf9bb548e197b65d6e3.jpg.webp?width=2280&height=700&size=522823" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937997194331f5981d1936a4b94b268f48c364fb7e4.jpg.webp?width=2280&height=700&size=399590" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/169379972477658d34a1109c545469ee2cc2eeba3378e.jpg.webp?width=2280&height=730&size=796839" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/16937997299719891ce5f61aa4699ba1082974f786176.jpg.webp?width=2280&height=700&size=415232" width="1140" height="350">
+        <img src="https://image01.realme.net/general/20230904/1693799735347979def6547ae4640a02e6f2949884953.jpg.webp?width=2280&height=726&size=524380" width="1140" height="363">
+        <img src="https://image01.realme.net/general/20230904/1693799740641abdb97b04c9c4efc969dbdf95e4845e9.jpg.webp?width=2280&height=1578&size=547704" width="1140" height="780">
+    </div>
+</div>
+    
+<div class="service-devision">
+    <div class="servicecard sp1">
+        <img src="https://image01.realme.net/general/20220811/1660218890969.svg" width="30" height="30">
+        <h3>Free Shipping</h3>
+        <p>Available for orders above ₹ 500</p>
+    </div>
+    <div class="servicecard sp2">
+        <img src="https://image01.realme.net/general/20220811/1660218977120.svg" width="30" height="30">
+        <h3>Cash On Delivery</h3>
+        <p>Supports Payments On Delivery</p>
+    </div>
+    <div class="servicecard sp3">
+        <img src="https://image01.realme.net/general/20220811/1660218953359.svg" width="30" height="30">
+        <h3>Secure Payment</h3>
+        <p>realme Store offers various payment</p>
+        <p>options</p>
+    </div>
+    <div class="servicecard sp4">
+        <img src="https://image01.realme.net/general/20220811/1660219025928.svg"width="30" height="30">
+        <h3>Warranty Pollcy</h3>
+        <p>This Warranty pollcy applies to all</p>
+        <p>reamle products only in india</p>
+    </div>
+</div>
+
+<div class="footer-section">
+  <div class="fotter-menu">
+    <div class="title-menu">
+    <h3>Recommended</h3>
+    </div>
+    <ul class="menu-list ml1">
+        <li>realme narzo 60x 5G</li>
+        <li>realme C51</li>
+        <li>realme 11 5G</li>
+        <li>realme 11x 5G</li>
+        <li>realme C53</li>
+        <li>realme narzo 60 5G</li>
+        <li>realme narzo 60 Pro 5G</li>
+        <li>realme 11 Pro 5G</li>
+        <li>realme 11 Pro+ 5G</li>
+        <li>More phones</li>
+    </ul>
+  </div>
+  <div class="fotter-menu tm-2">
+    <div class="title-menu">
+    <h3>Support</h3>
+    </div>
+    <ul class="menu-list">
+        <li>realme VIP</li>
+        <li>realme care+</li>
+        <li>FAQ</li>
+        <li>User Guide</li>
+        <li>Service Centers</li>
+        <li>realme Coins</li>
+        <li>E-waste Management</li>
+        <li>realme Exchange T&C</li>
+        <li>UI 4.0</li>
+    </ul>
+  </div>
+  <div class="fotter-menu">
+    <div class="title-menu tm-3">
+    <h3>About realme</h3>
+    </div>
+    <ul class="menu-list">
+        <li>Our Brand</li>
+        <li>Newsroom</li>
+        <li>Retail Store</li>
+        <li>Declaration</li>
+        <li>realmeow</li>
+    </ul>
+  </div>
+  <div class="fotter-menu">
+    <div class="title-menu tm-4">
+    <h3>Contact realme</h3>
+    </div>
+    <ul class="menu-list">
+        <li>HR: HR@realme.com</li>
+        <li>PR: indiapr@realme.com</li>
+        <li>Legal: legal.in@realme.com</li>
+        <li>Marketing: marketing.in@realme.com</li>
+    </ul>
+  </div>
+  <div class="support-section">
+    <div class="button-support">
+    <p><img src="chat-support.png"></p>
+        <p class="chat-text">CHAT SUPPORT</p>
+    </div>
+    <div class="text-support">
+        <p>9:00-21:00, MON-SUN</p>
+        <p>Including Holidays</p>
+        <h3>1800 102 2777</h3>
+    </div>
+    <div class="social-icons">
+        <p class="icon-flex"><i class="fa-brands fa-facebook"></i></p>
+        <p class="icon-flex"><i class="fa-brands fa-twitter"></i></p>
+        <p class="icon-flex"><i class="fa-brands fa-youtube"></i></p>
+        <p class="icon-flex"><i class="fa-brands fa-instagram"></i></p>
+    </div>
+  </div>
+
+
+</div>
+<p class="bottom-address">India ( English / INR )</p>
+<hr class="bottom-line">
+
+
+</div>
+<footer class="footer">
+    <div class="footer-text">
+        <h3>realme C51</h3>
+    </div>
+    <div class="footer-right-flex">
+        <h3>₹8,999</h3>
+        <div class="media-image"></div>
+        <button class="footer-button-1">Add To Cart</button>
+        <button class="footer-button-2">Buy Now</button>
+    </div>
+</footer> 
+
+<!-- </div> -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
