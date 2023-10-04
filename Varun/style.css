@@ -330,3 +330,53 @@ font-weight:bold;
     height:18520px;
      margin-top:40px;
 }
+@media(300px<=width<=600px)
+{
+    .nav-title
+    {
+        display: none;
+    }
+
+    .nav-items
+    {
+        text-align: center;
+        margin-left: 30% ;
+    }
+    .first-div
+    {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .image-1
+    {
+        margin-left: 10px;
+    }
+    .image-2
+    {
+        margin-left: 10px;
+    }
+    .details-part
+    {
+        margin-left: 10px;
+        text-align: left;
+    }
+    .text-rec
+    {
+        margin-top:5px;
+    }
+    .carousel-images
+    {
+       flex-wrap: wrap;
+       overflow: hidden;
+       margin-left: 10px;
+    }
+    .each-image
+    {
+        flex-direction: column;
+    }
+    .images-card
+    {
+        width: fit-content;
+        margin-left: 10px ;
+    }
+}
