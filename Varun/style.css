@@ -568,4 +568,14 @@ margin-top:-20px;
     {
         justify-content: right;
     }
+    .footer-button-1
+    {
+        background-color: #000000;
+        color: white;
+    }
+    .footer-button-2
+    {
+        background-color: yellow;
+        color: black;
+    }
 }
