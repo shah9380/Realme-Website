@@ -6,79 +6,108 @@
 }
 
 .container{
-    width: 100%;
-    margin-left: 80px;
+    max-width: 100%;
+    align-items: center;
     display: flex;
-    justify-content:space-between;
+    flex-direction: column;
+    justify-content:space-around;
     /* border: 2px solid rgb(7, 244, 62); */
+    margin-left: 60px;
    
 
 }
+.sm-container{
+  
+    max-width: 90%;
+    justify-content:center;
+    display: flex;
+}
 .left-image{
-   margin-left: 60px;
    
-   /* border: 2px solid rgb(216, 50, 50); */
+   margin-right: 60px;
+  
 
 }
 .right{
-    /* border: 2px solid gray; */
-    z-index: 1;
-   overflow-y: auto;
+   
+    /* margin-left: 60px; */
+    overflow-y: scroll;
+    height: 650px;
+    width: 70%;
 }
 .left-image i{
-    margin-right: 00px;
+    margin-left: 50px;
     font-size: 50px;
     color: gray;
-    margin-top: -40px;
+    margin-top: -60px;
  
  }
 .small-image{
     display: flex;
-    margin-left: 80px;
+    margin-left: 43px;
 }
 .right li {
     line-height: 32px;
 }
+
+.right img{
+   margin-top: -30px;
+   margin-left: 115px;
+
+  }
 .right li a {
     color:#1677ff;
     border-bottom: 1px solid #1677ff;
 }
 .mAh{
-    margin-top: 20px;
+   width: 90%;
+   display: flex;
+   margin-top: 40px;
+   background-color: #f9f9f9;
+   height: 130px;
+   border-radius: 8px;
+   justify-content: space-around;
+
+}
+.storage{
+    margin-top: 30px;
     display: flex;
-    background: #f9f9f9;
-    padding: 20px;
-    width: 90%;
-    
-    justify-content: space-around;
-    border-radius: 8px;
-
-}
-.color{
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 20px;
-}
-
-.power{
+    justify-content: center;
+    margin-left: 20px;
     text-align: center;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
-.power h3{
-    font-size: 19px;
+.storage h3{
+    font-size: 16px;
     font-weight: 600;
     color: black;
     line-height: 20px;
 }
-.power p{
+.storage p{
     font-size: 12px;
     font-weight: 300;
     color: gray;
     margin-top: 5px;
    
 }
+
+.storage img{
+margin-left: -20px;
+}
+
+.color{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.colorp{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
 .champ{
    
     display: flex;
@@ -86,6 +115,10 @@
     margin-top: 20px;
     justify-content: space-between;
     align-items: center;
+}
+.champ img{
+margin-left: -60px;
+margin-top: -0px;
 }
 .champ1{
    
@@ -143,7 +176,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background: #f9f9f9;
-height: 25%;
+height: 48%;
 border-top-left-radius: 8px; 
 border-top-right-radius: 8px; 
 }
@@ -158,9 +191,19 @@ border-top-right-radius: 8px;
     height: 50px;
     justify-content: space-between;
 }
+.care img{
+    margin-top: 5px;
+    margin-left: 20px;
+}
 .care h3 {
     color:#807f7f
 }
+.warrent img{
+    margin-top: -10px;
+    margin-left: 10px;
+
+}
+
 .warranty{
     display: flex;
     padding: 0 15px 0 15px;
@@ -192,10 +235,17 @@ border-top-right-radius: 8px;
     border-radius: 5px;
     color: #fc4035;
 }
-.protection i{
-    border:2px solid #1677ff;
-   color: rgb(215, 61, 61);
-   font-size: 50px;
+.Protection {
+    color: rgb(98, 94, 94);
+    font-size: 14px;
+    margin-left: 5px;
+   
+}
+.Protection i{
+   color: rgb(230, 228, 228);
+   font-size: 20px;
+   margin-top: 10px;
+   margin-left: -300px;
 }
 .input{
     display: flex;
@@ -208,6 +258,7 @@ input{
     text-align: center;
     border-radius: 5px;
     height: 40px;
+    margin-top: 20px;
 }
 input:hover{
     cursor: pointer;
@@ -239,7 +290,7 @@ input:hover{
     border-radius: 15px;
     color: white;
     padding: 10px 20px 10px 20px;
-    margin-right: 20px;
+    margin-right: 15px;
     font-size: 13px;
 }
 .warrent h3{
@@ -254,6 +305,7 @@ input:hover{
 /*  recommended section start from here */
 .recommended{
     display: flex;
+    width: 100%;
     margin-top: 80px;
     justify-content: center;
     flex-direction: column;
@@ -317,4 +369,201 @@ cursor: pointer;
 .festive{
     background: white;
     width: 85%;
+}
+
+
+
+@media only screen and (max-width: 768px) and (min-width:350px) {
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    .sm-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .sm-container .left-image img {
+     width: 500px;
+     position: relative;
+   }
+
+    .left-image .fa-circle-play {
+      position: absolute;
+      margin-top: -140px;
+      margin-left: 90px;
+      color: #b7b3b3;
+  } 
+  .left-image .small-image img{
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .right{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: -60px;
+    position: relative;
+  }
+
+  .right h3{
+    font-size: 20px;
+
+  }
+  .right img{
+   margin-top: -30px;
+   margin-left: 78px;
+
+  }
+  .right li{
+    max-width: 300px;
+  }
+  li span{
+    margin-left: 22px;
+  }
+  
+  .mAh{
+        margin-top: 10px;
+        display: flex;
+        background: #f9f9f9;
+        justify-content:space-around;
+
+        width: 100%;
+  }
+  .mAh .storage{
+   max-width: 100%;
+
+   display: flex;
+   justify-content: center;
+   margin-left:10px;
+   align-items: center;
+  }
+  .storage h3{
+    font-size: 10px;
+    font-weight: 500;
+    color: black;
+    line-height: 10px;
+}
+.storage p{
+    font-size: 9px;
+    font-weight: 300;
+    color: gray;
+    margin-top: 5px;
+   
+}
+.storage img{
+    width: 10px;
+    margin-left: 10px;
+}
+.color{
+    font-size: 10px;
+    font-weight: 200;
+}
+  .champ{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .champ1{
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .champ img{
+    width: 20px;
+    margin-top: 5px;
+    margin-left: 0px;
+  }
+  .champ .col2 h3{
+    font-size: 15px;
+  }
+  .champ .col2{
+    height: 40px;
+  }
+  .champ .col1 h3{
+    font-size: 15px;
+  }
+  .champ .col1{
+    height: 40px;
+  }
+  .champ1 .col1 h3{
+    font-size: 15px;
+  }
+  .champ1 .col1{
+    height: 40px;
+  }
+.quantity ,h1 {
+    font-size: 15px;
+}
+
+.realme-care{
+    display: flex;
+    max-width: 400px;
+    align-items: center;
+    flex-direction: column;
+}
+.care img{
+    margin-top: 2px;
+    margin-left: 10px;
+    width: 80px;
+}
+.care h3{
+ font-size: 10px;
+}
+.warranty{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+.warrent img{
+    width: 20px;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+.warrent h2{
+font-size: 8px;
+}
+.premium h2{
+    font-size: 8px;
+    
+}
+.Protection i{
+font-size: 10px;
+margin-left: 10px;
+}
+
+.Protection a{
+font-size: 10px;
+}
+input{
+    width: 150px;
+}
+.btn1{
+    margin-top: 20px;
+    font-size: 10px;
+    height: 30px;
+    align-items: center;
+}
+.recommended{
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    max-width: 400px;
+}
+.reco h3{
+    font-size: 8px;
+    font-weight: 900;
+}
+.reco p{
+    font-size: 8px;
+}
 }
