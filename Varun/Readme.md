@@ -82,5 +82,10 @@ Here's a breakdown of some key parts of CSS:
 9. **Media Query:**
    - A media query at the end targets devices with a width between 300px and 600px and applies specific styles to elements for smaller screens.
 
-It's important to note that this CSS appears to contain some errors or inconsistencies, such as typos in property values (e.g., `color: blcak` should likely be `color: black`), and the media query should use `@media screen and (max-width: 600px)` to specify the screen width range.
+It's important to note that this CSS appears to contain some errors or inconsistencies, such as typos in property values (e.g., `color: blcak` should likely be `color: black`), and the media query should use `@media screen and (max-width: 600px)` to specify the screen width range. 
+The Resulsts of The code are attached Below :- 
+![Screenshot 2023-10-05 095330](https://github.com/shah9380/Realme-Website/assets/89764813/12d4db71-99f6-4b16-a02b-93326467664f)
+![Screenshot 2023-10-05 095354](https://github.com/shah9380/Realme-Website/assets/89764813/9acf6218-8a5e-4825-8579-1816696cae0b)
 
+![Screenshot 2023-10-05 093945](https://github.com/shah9380/Realme![Screenshot 2023-10-05 095115](https://github.com/shah9380/Realme-Website/assets/89764813/9c283e64-1e50-4681-8627-26bc26e97f68)
+-Website/assets/89764813/6d72acf2-39f0-4cce-a056-fc71716f7bf0)
