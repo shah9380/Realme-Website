@@ -10,6 +10,7 @@ body{
     background-image: url("back-login.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-image:center;
 }
 header{
     width: 100%;
@@ -155,7 +156,7 @@ footer{
 .agreement p, .copyright p{
     padding: 12px;
 }
-.agreement p:hover, .copyright p:hover{
+.agreement p:hover{
    opacity: 0.5;
 }
 footer a{
