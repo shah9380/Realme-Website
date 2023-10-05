@@ -1,3 +1,22 @@
+![image](https://github.com/RajkumarRj/Realme-Website/assets/142428565/ca0bf128-5782-4a0b-a810-bc97903de380)
+
+
+![image](https://github.com/RajkumarRj/Realme-Website/assets/142428565/23d73afc-2a85-4ea2-ba7a-545543ed45cd)
+
+
+![image](https://github.com/RajkumarRj/Realme-Website/assets/142428565/6bfa5493-e3e4-4921-bdd4-90311af1ea31)
+
+
+![image](https://github.com/RajkumarRj/Realme-Website/assets/142428565/129e999b-8936-4451-ad0a-d34d1978acf8)
+
+
+![image](https://github.com/RajkumarRj/Realme-Website/assets/142428565/f9e4dfd7-4f4b-4bb6-a047-60297fbba625)
+
+
+![image](https://github.com/RajkumarRj/Realme-Website/assets/142428565/f93532f7-0b90-4622-919b-7df3e98ab965)
+
+
+
 
 1. **Navigation Menu (Header)**:
    - The `<header>` element represents the header section of your web page.
